@@ -1,5 +1,6 @@
 board_size = 3
 board = [1,2,3,4,5,6,7,8,9]
+val_input = '0123456789'
 def drow_board():
     for i in range(board_size):
         print(board[i*3],'|',board[1+i*3],'|',board[2+i*3])
@@ -24,16 +25,7 @@ def start():
     drow_board()
     while num_step <= 9 and not chek():
         in_val = input('Ходит игрок ' + cur_player + ' Введите номер клетки для хода, 0 - выход из игры')
-        if (in_val == '0' or
-                in_val == '1' or
-                in_val == '2' or
-                in_val == '3' or
-                in_val == '4' or
-                in_val == '5' or
-                in_val == '6' or
-                in_val == '7' or
-                in_val == '8' or
-                in_val == '9'):
+        if in_val in val_input:
             index = int(in_val)
             if index == 0:
                 print('Игрок ' + cur_player + ' вышел из игры.')
