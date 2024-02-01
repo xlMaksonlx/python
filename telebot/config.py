@@ -1,6 +1,6 @@
 
 
-TOKEN = "6647922181:AAGGx6zfrqWLHwNsMWQpkCTexPpyD0GZKQo"
+TOKEN = "токен бота"
 
 
 keys = {'доллар': 'USD',
@@ -11,4 +11,4 @@ keys = {'доллар': 'USD',
 
 # константы для API запроса
 payload ={}
-headers = {'apikey': 'GwyWBig9phCKgeKdTAlWKVFFf9S96w9o'}
+headers = {'apikey': 'ключ API'}
